@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- we have to tell browser we using angularjs -->
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First AngularJS App</title>
+</head>
+<body>
+    
+    <!-- ng-init ='name=''faiz'  works like  js  variable init  var name='faiz'  -->
+    <!-- we have to avoid ng-init this is only for testing purpose we will use controller afterwards -->
+<div ng-init="name='faiz'"> 
+
+    <!-- it will op faiz -->
+    {{name}} 
+
+</div>
+<!-- this braces are called handle bars -->
+
+
+{{5+3}}
+
+
+<!-- if u want to avoid this braces you can use directive ng-bind and the variable name -->
+    <!-- we are use ng-bind in span tag -->
+    <span ng-bind="name"></span>
+
+    <!-- Note:  ng-bind not work with form element eg input , button etc we have to use ng-model -->
+
+<!-- by default input type is text so we dont need to defined type as text -->
+
+<input  ng-model="name">
+
+<!-- link rfor angularjs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</body>
+</html>

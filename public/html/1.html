@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- we have to tell browser we using angularjs -->
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AngularJS App</title>
+</head>
+<body>
+
+
+<div  ng-init="a=40;b=30;sub=a-b;sum=a+b">
+
+    {{a}}
+    {{b}}
+    {{sub}}
+    {{sum}}
+
+</div>
+<div  ng-init="obj={sid:10375,name:'faiz'}">
+
+
+    {{obj.sid}}
+    {{obj.name}}
+
+
+</div>
+
+
+<span ng-bind="obj.sid +1"></span>
+
+<input type="text" ng-model="obj.name+' shaikh'" name="" id="">
+{{obj.name}}
+    <!-- link rfor angularjs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</body>
+</html>
+
+    
